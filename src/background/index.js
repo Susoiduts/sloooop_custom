@@ -272,6 +272,7 @@ function cachedCheckUserAccount(token) {
     });
 }
 
+//starts extension flow once auth is complete
 function enableExtensionFlow(bearerToken) {
     return new Promise((resolve, reject) => {
         //FIXME: how to resolve successive user calls?
